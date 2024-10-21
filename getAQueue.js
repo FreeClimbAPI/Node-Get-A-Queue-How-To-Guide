@@ -9,10 +9,10 @@ const freeClimbConfig = freeclimbSDK.createConfiguration({
   accountId,
   apiKey,
 });
-const apiInstance = new freeclimbSDK.DefaultApi(freeClimbConfig);
+const freeclimb = new freeclimbSDK.DefaultApi(freeClimbConfig);
 
 // Retreive a queue by queueId
-apiInstance
+freeclimb
   .getAQueue(queueId)
   .then((queue) => {
     // Use the queue object
